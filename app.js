@@ -41,6 +41,7 @@ const sortBingo = (prof) => {
 
 const initButton = document.getElementById("initBingo");
 initButton.addEventListener('click', ()=>{
+    const title_h2 = document.getElementsByTagName('h2')[0];
     const gameCont = document.getElementsByClassName('game-container')[0];
     const radioInputs = [...document.getElementsByTagName('input')];
 
@@ -50,6 +51,7 @@ initButton.addEventListener('click', ()=>{
     }else{
         prof = "Vini"
     }
+    title_h2.innerText += ` do ${prof}`
     gameCont.innerHTML ="";
     const bingPhrases = sortBingo(prof);
 
