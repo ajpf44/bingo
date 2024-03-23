@@ -17,7 +17,7 @@ main{
     flex-wrap: wrap;
 }
 
-.game-container > label > div {
+.game-container > .input-container  {
     width: fit-content;
     width: 200px;
     padding: 1rem;
@@ -29,6 +29,10 @@ main{
     border: 1px solid black;
 }
 
-.game-container > label:hover{
+.game-container> .input-container > label:hover{
+    cursor: pointer;
+}
+
+.game-container > .input-container:hover{
     cursor: pointer;
 }
